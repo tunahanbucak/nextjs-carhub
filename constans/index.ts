@@ -92,10 +92,57 @@ export const footerLinks = [
   {
     title: "Sosyal Medya",
     links: [
-      { title: "Discord", url: "/", icon: " discord.svg " },
-      { title: "Instagram", url: "/", icon: " discord.svg " },
-      { title: "Twitter", url: "/", icon: " linkedin.svg " },
-      { title: "Facebook", url: "/", icon: " facebook.svg " },
+      { title: "Discord", url: "/" },
+      { title: "Instagram", url: "/" },
+      { title: "Twitter", url: "/" },
+      { title: "Facebook", url: "/" },
     ],
   },
+];
+
+export const locations = [
+  {
+    cityName: "İstanbul",
+    price: 100,
+    img: "/BMW.png",
+  },
+];
+
+export const information = [
+  "Farklı rent a car firmalarının araç alternatiflerini detaylıca karşılaştırıp inceleyin.",
+  "Kiraladığınız aracı teslim alacağınız ve teslim edeceğiniz yerin adresini kontrol edin. Aracı, teslim aldığınız yerden farklı bir lokasyonda teslim etme alternatifini değerlendirebilirsiniz.",
+  "İhtiyacınıza uygun özellikteki araçlar arasından seçim yapın. Örneğin eğer çok sayıda valiziniz varsa kiralayacağınız aracın bagaj hacminin geniş olmasına dikkat edin.",
+  "Bazı firmalar kiralayacağınız aracı adresinize teslim edebiliyor. Bu hizmeti veren firmalardan yararlanabilirsiniz.",
+  "Araç kiralamak için ehliyetinizi aldığınız tarihin üzerinden en az 2 yıl geçmesi gerektiğini unutmayın.",
+  "Kiralayacağınız araç için gerekli şartları sağladığınızdan emin olun.",
+  "Araç kiralarken kullanım koşullarını dikkatli bir şekilde okuyun.",
+  "Aracınızı teslim alırken sigorta ve sözleşmeyi dikkatli inceleyin ve aracı teslim almadan önce aracın dışını ve içini kontrol edin.",
+];
+
+export const NAV_LINKS = [
+  { href: "/", key: "home", label: "Ana Sayfa" },
+  { href: "/campaigns", key: "campaigns", label: "Kampanyalar" },
+  {
+    href: "/corporate-rental",
+    key: "corporate_rental",
+    label: "Kurumsal Kiralama",
+  },
+  {
+    href: "/rental-conditions",
+    key: "rental_conditions ",
+    label: "Kiralama Koşulları ",
+  },
+  { href: "/", key: "contact_us", label: "Bize Ulaşın" },
+];
+
+export const corporate = [
+  "Kolay ulaşılabilen geniş şube ağı,",
+  "Bakımlı ve genç araçlardan oluşan filosu,",
+  "Kurumlara özel fiyatlandırma imkanı,",
+  "Şirket kredi kartları ile ödeme imkanı,",
+  "Sadece kurumsal müşterilerimize hizmet veren özel “Kurumsal Ekip” yapısı ile hızlı çözümler,",
+  "Opsiyonel olarak sunulan kış lastiği, isofiks bağlantılı çocuk koltuğu, güncel navigasyon cihazları ve zengin içerikli sigorta seçenekleri,",
+  "Pazartesi - Cumartesi 08.00-00.00 arasında hizmet veren Çağrı Merkezi yapısı ile kesintisiz destek hizmeti;444 4 444",
+  "Kurumsal Müşterilerimize özel rezervasyon hizmeti; kurumsalrzv@carhub.com.tr",
+  "Araçların tüm vergi, trafik sigortası ve servis bakımları Garenta’ya aittir.     ",
 ];

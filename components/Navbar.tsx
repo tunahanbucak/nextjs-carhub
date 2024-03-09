@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CustomButton } from ".";
+import { NAV_LINKS } from "@/constans";
 
 export default function Navbar() {
   return (
@@ -16,6 +17,16 @@ export default function Navbar() {
             className="object-contain"
           />
         </Link>
+        <ul className="hidden h-full gap-12 lg:flex">
+          {NAV_LINKS.map((link) => (
+            <Link
+              href={link.href}
+              key={link.key}
+              className="text-[16px] font-[400] text-black-100 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+              {link.label}
+            </Link>
+          ))}
+        </ul>
         <Link href="/login">
           <CustomButton
             title="Sign In"

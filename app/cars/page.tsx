@@ -3,6 +3,11 @@ import Hero from "@/components/Hero";
 import { fuels, yearsOfProduction } from "@/constans";
 import { CarsProps } from "@/types";
 import { fetchCars } from "@/utils";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cars",
+};
 
 export default async function Cars({ searchParams }: CarsProps) {
   const allCars = await fetchCars({
