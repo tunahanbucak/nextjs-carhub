@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
+import Link from "next/link";
 
 export default function Hero() {
   const handleScroll = () => {
@@ -13,7 +14,7 @@ export default function Hero() {
   };
   return (
     <div className=" flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto">
-      <div className="flex-1 pt-36 padding-x">
+      <div className="flex-1 pt-36 sm:px-16 px-6">
         <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabol">
           Hızlı ve süper kolay bir şekilde araç bulun, rezervasyon yapın,
           kiralayın!
@@ -22,11 +23,13 @@ export default function Hero() {
           Zahmetsiz rezervasyonumuzla araç kiralama deneyiminizi kolaylaştırın
           süreç.
         </p>
-        <CustomButton
-          title="Arabaları keşfedin"
-          containerStyles="bg-primary-blue text-while rounded-full mt-10 text-white"
-          handleClick={handleScroll}
-        />
+        <Link href="/cars">
+          <CustomButton
+            title="Arabaları keşfedin"
+            containerStyles="bg-primary-blue text-while rounded-full mt-10 text-white"
+            //   handleClick={handleScroll}
+          />
+        </Link>
       </div>
       <div className="xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen">
         <div className="relative xl:w-full w-[90%] xl:h-full h-[590px] z-0">

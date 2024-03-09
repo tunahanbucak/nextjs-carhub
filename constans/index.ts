@@ -92,10 +92,10 @@ export const footerLinks = [
   {
     title: "Sosyal Medya",
     links: [
-      { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
-      { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
+      { title: "Discord", url: "/", icon: " discord.svg " },
+      { title: "Instagram", url: "/", icon: " discord.svg " },
+      { title: "Twitter", url: "/", icon: " linkedin.svg " },
+      { title: "Facebook", url: "/", icon: " facebook.svg " },
     ],
   },
 ];

@@ -23,7 +23,7 @@ export interface FilterProps {
   fuel?: string;
 }
 
-export interface HomeProps {
+export interface CarsProps {
   searchParams: FilterProps;
 }
 
