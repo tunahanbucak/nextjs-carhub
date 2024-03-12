@@ -1,7 +1,6 @@
 import React from "react";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import LoginForm from "@/components/LoginForm";
-import { SignIn } from "@clerk/nextjs";
 
 export default function page() {
   return (
