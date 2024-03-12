@@ -81,3 +81,8 @@ export interface CarProps {
   transmission: string;
   year: number;
 }
+
+export interface CampaignCardProps {
+  title: string;
+  image: string;
+}

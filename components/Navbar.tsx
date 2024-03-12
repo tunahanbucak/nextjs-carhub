@@ -27,13 +27,11 @@ export default function Navbar() {
             </Link>
           ))}
         </ul>
-        <Link href="/login">
-          <CustomButton
-            title="Sign In"
-            btnType="button"
-            containerStyles="text-primary-blue rounded-full bg-white min-w-[130px] hover:bg-black-100"
-          />
-        </Link>
+        <CustomButton
+          title="Sign In"
+          btnType="button"
+          containerStyles="text-white rounded-full bg-gray-500 min-w-[130px] hover:bg-black-100"
+        />
       </nav>
     </header>
   );

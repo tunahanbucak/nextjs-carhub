@@ -84,8 +84,8 @@ export const footerLinks = [
     title: "Şirket",
     links: [
       { title: "Etkinliklerimiz", url: "/" },
-      { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
+      { title: "Arabalarımız", url: "/cars" },
+      { title: "Kampanyalar", url: "/campaigns" },
       { title: "Bir arkadaşınızı davet edin", url: "/" },
     ],
   },
@@ -132,7 +132,7 @@ export const NAV_LINKS = [
     key: "rental_conditions ",
     label: "Kiralama Koşulları ",
   },
-  { href: "/", key: "contact_us", label: "Bize Ulaşın" },
+  { href: "/contactus", key: "contact_us", label: "Bize Ulaşın" },
 ];
 
 export const corporate = [
