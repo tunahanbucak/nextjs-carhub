@@ -28,7 +28,7 @@ export default function Navbar() {
           ))}
         </ul>
         <CustomButton
-          title="Sign In"
+          title="Giriş Yap"
           btnType="button"
           containerStyles="text-white rounded-full bg-gray-500 min-w-[130px] hover:bg-black-100"
         />

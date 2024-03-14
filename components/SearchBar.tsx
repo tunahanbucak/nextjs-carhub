@@ -27,11 +27,12 @@ export default function SearchBar() {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (manufacturer === "" && model === " ") {
-      return alert("Please fill in the search bar");
+    if (manufacturer.trim() === "" && model.trim() === "") {
+      return alert("Please provide some input");
     }
     updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
   };
+
   const updateSearchParams = (model: string, manufacturer: string) => {
     const searchParams = new URLSearchParams(window.location.search);
 
@@ -41,7 +42,7 @@ export default function SearchBar() {
       searchParams.delete("model");
     }
 
-    if (model) {
+    if (manufacturer) {
       searchParams.set("manufacturer", manufacturer);
     } else {
       searchParams.delete("manufacturer");
@@ -51,7 +52,7 @@ export default function SearchBar() {
       window.location.pathname
     }?${searchParams.toString()}`;
 
-    router.push(newPathname);
+    router.push(newPathname, { scroll: false });
   };
 
   return (
@@ -78,7 +79,7 @@ export default function SearchBar() {
           name="model"
           value={model}
           onChange={(e) => setModel(e.target.value)}
-          placeholder="Tiguan"
+          placeholder="M8"
           className="w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm"
         />
         <SearchButton otherClasses="sm:hidden" />
